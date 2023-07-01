@@ -1,0 +1,41 @@
+name: fimeco
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment: 
+  sdk: '>=3.0.2 <4.0.0'
+
+dependencies: 
+  cupertino_icons: ^1.0.2
+  get: 4.6.5
+  velocity_x: 4.0.0
+  line_icons: 2.0.1
+  floating_action_bubble: 1.1.4
+  google_fonts: 4.0.5
+  flutter_document_reader_api: any
+  path_provider: any
+  flutter_document_reader_core_fullrfid: any
+  permission_handler: 10.2.0
+  getwidget: 3.1.1
+  mongo_dart: 0.9.1
+  image_picker: 0.8.9
+  flutter: 
+    sdk: flutter
+
+dev_dependencies: 
+  flutter_lints: ^2.0.0
+  flutter_test: 
+    sdk: flutter
+
+flutter: 
+  plugin: 
+    platforms: 
+      android: 
+        package: io.flutter.plugins.regula.documentreader.flutter_document_reader_api
+        pluginClass: FlutterDocumentReaderApiPlugin
+      ios: 
+        pluginClass: FlutterDocumentReaderApiPlugin
+  assets: 
+    - regula.license
+  uses-material-design: true
+
